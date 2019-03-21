@@ -33,7 +33,6 @@ class ManifestParser {
         
         for ($i=0;$i -le $file.Count;$i++) {
             $line = $file[$i];
-            # Rethink this
             switch -regex ($line) {
                 # whitespace
                 '^\s*$' {
@@ -81,7 +80,6 @@ class Manifest {
     [Semver]$version;
     [string[]]$contents;
     [string[]]$description;
-    [hashtable]$GitMetadata;
     static [object[]]$Schema = @(
         @{
             name='name';
