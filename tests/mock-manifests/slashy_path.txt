@@ -1,0 +1,21 @@
+[version]
+# version number of package
+1.0.0
+
+[contents]
+# contents of the package, relative to <repo name>/src/
+\something//something.sql
+\something\something.sql
+\\something\something.sql
+\\something\\something.sql
+/something\\something.sql
+/something\something.sql
+/something//something.sql
+/something/something.sql
+something/something.sql
+something//something.sql
+something/\something.sql
+something\/something.sql
+     
+[description]
+# description of the package (optional)
